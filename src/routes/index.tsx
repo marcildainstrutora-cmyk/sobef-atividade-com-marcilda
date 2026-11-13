@@ -26,9 +26,9 @@ function Index() {
               Curso Presencial • 2026
             </span>
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
-              Informática Avançada — Atividades SOBEF
+              Informática Avançada — Atividades
             </h1>
-            <p className="mt-1 text-sm text-muted-foreground">Instrutora: Marcilda Pereira</p>
+            <p className="mt-1 text-sm text-muted-foreground">Cursos de Qualificação — SOBEF • Instrutora: Marcilda Pereira</p>
           </div>
         </div>
       </header>
