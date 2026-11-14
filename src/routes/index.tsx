@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import logo from "@/assets/mp-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -15,20 +16,35 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const INFO = ["Curso Presencial", "40 Horas", "15 Vagas", "Manhã (8h às 12h)", "2ª a 6ª feira"];
+const INFO = ["Curso Presencial", "40 Horas", "15 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
+
+const DATA_INICIAL = "Segunda-feira, 16 de novembro de 2026";
 
 const AULAS = [
   {
-    titulo: "Writer — Marcadores, numeração e listas com vários níveis",
+    titulo: "1. Writer — Marcadores, numeração e listas com vários níveis",
     texto:
       "Nesta aula, os alunos aprendem a organizar informações no LibreOffice Writer usando marcadores e numeração automática. O foco é criar listas com vários níveis (tópicos e subtópicos), ajustar o recuo de cada nível, trocar o estilo dos marcadores e reiniciar ou continuar a numeração. Ao final, cada aluno monta um documento com uma lista hierárquica bem estruturada, como um sumário ou um plano de aula.",
+    exercicio:
+      "Crie um documento no Writer com o título \"Plano de Estudos\". Monte uma lista com pelo menos 3 tópicos principais numerados e, dentro de cada tópico, 2 subtópicos com marcadores. Ajuste o recuo de cada nível e troque o estilo dos marcadores para um símbolo de sua preferência.",
   },
   {
-    titulo: "Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
+    titulo: "2. Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
     texto:
       "Nesta aula, os alunos aprendem a trabalhar com tabelas no LibreOffice Writer: inserir uma tabela, adicionar e remover linhas e colunas, mesclar e dividir células, personalizar bordas (espessura, estilo e cor) e aplicar cor de fundo para destacar cabeçalhos. Como atividade prática, cada aluno cria uma tabela formatada, como um quadro de horários ou uma lista de presença.",
+    exercicio:
+      "Monte um quadro de horários da semana com 6 colunas (Horário, 2ª a 6ª feira) e 4 linhas de horários. Mescle as células do título na primeira linha, aplique cor de fundo no cabeçalho e personalize as bordas com espessura e cor diferentes.",
   },
 ];
+
+function load<T>(key: string, fallback: T): T {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? (JSON.parse(raw) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
 
 function copySummary() {
   const text = [
@@ -41,6 +57,23 @@ function copySummary() {
 }
 
 function Index() {
+  const [aba, setAba] = useState<"editar" | "formatado">("editar");
+  const [data, setData] = useState(DATA_INICIAL);
+  const [textos, setTextos] = useState<string[]>(AULAS.map((a) => a.texto));
+
+  useEffect(() => {
+    setData(load("sobef-data", DATA_INICIAL));
+    setTextos(load("sobef-textos", AULAS.map((a) => a.texto)));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("sobef-data", JSON.stringify(data));
+  }, [data]);
+
+  useEffect(() => {
+    localStorage.setItem("sobef-textos", JSON.stringify(textos));
+  }, [textos]);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-card">
@@ -76,17 +109,94 @@ function Index() {
             <span className="text-muted-foreground">Executora:</span> <strong>SOBEF</strong>
           </li>
         </ul>
-        <section className="mt-8">
-          <h2 className="text-lg font-bold sm:text-xl">Aulas</h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {AULAS.map((aula) => (
-              <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
-                <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{aula.texto}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+
+        <div className="mt-6 rounded-lg border border-border bg-card p-4">
+          <label htmlFor="data-segunda" className="text-sm font-semibold">
+            Data de segunda-feira (editável)
+          </label>
+          <input
+            id="data-segunda"
+            value={data}
+            onChange={(e) => setData(e.target.value)}
+            className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
+          />
+        </div>
+
+        <div className="mt-8 flex gap-2 print:hidden">
+          <button
+            onClick={() => setAba("editar")}
+            className={`rounded-md px-4 py-2 text-sm font-medium ${
+              aba === "editar"
+                ? "bg-primary text-primary-foreground"
+                : "border border-border bg-card hover:bg-accent"
+            }`}
+          >
+            Editar textos
+          </button>
+          <button
+            onClick={() => setAba("formatado")}
+            className={`rounded-md px-4 py-2 text-sm font-medium ${
+              aba === "formatado"
+                ? "bg-primary text-primary-foreground"
+                : "border border-border bg-card hover:bg-accent"
+            }`}
+          >
+            Texto formatado
+          </button>
+        </div>
+
+        {aba === "editar" ? (
+          <section className="mt-6">
+            <h2 className="text-lg font-bold sm:text-xl">Aulas — edição</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Edite o texto de cada aula abaixo. As alterações ficam salvas neste navegador.
+            </p>
+            <div className="mt-4 grid gap-4">
+              {AULAS.map((aula, i) => (
+                <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
+                  <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
+                  <textarea
+                    value={textos[i]}
+                    onChange={(e) =>
+                      setTextos((prev) => prev.map((t, j) => (j === i ? e.target.value : t)))
+                    }
+                    rows={6}
+                    className="mt-3 w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus:ring-2 focus:ring-ring"
+                  />
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <section className="mt-6">
+            <h2 className="text-lg font-bold sm:text-xl">Aulas — texto formatado</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Início: <strong>{data}</strong>
+            </p>
+            <div className="mt-4 grid gap-4">
+              {AULAS.map((aula, i) => (
+                <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
+                  <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{textos[i]}</p>
+                  <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4">
+                    <h4 className="text-sm font-semibold">Exercício prático</h4>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
+                    <div className="mt-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                        Espaço para resposta
+                      </p>
+                      <div className="mt-2 space-y-6">
+                        {Array.from({ length: 6 }).map((_, l) => (
+                          <div key={l} className="border-b border-dashed border-muted-foreground/40" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
       </main>
     </div>
   );
