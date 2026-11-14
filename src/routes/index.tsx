@@ -28,6 +28,8 @@ const AULAS = [
       "Nesta aula, os alunos aprendem a organizar informações no LibreOffice Writer usando marcadores e numeração automática. O foco é criar listas com vários níveis (tópicos e subtópicos), ajustar o recuo de cada nível, trocar o estilo dos marcadores e reiniciar ou continuar a numeração. Ao final, cada aluno monta um documento com uma lista hierárquica bem estruturada, como um sumário ou um plano de aula.",
     exercicio:
       "Crie um documento no Writer com o título \"Plano de Estudos\". Monte uma lista com pelo menos 3 tópicos principais numerados e, dentro de cada tópico, 2 subtópicos com marcadores. Ajuste o recuo de cada nível e troque o estilo dos marcadores para um símbolo de sua preferência.",
+    modelo:
+      "Exemplo pronto — Plano de Estudos:\n1. Informática Básica\n   • Ligar e desligar o computador corretamente\n   • Usar o mouse e o teclado\n2. LibreOffice Writer\n   • Criar e salvar um documento\n   • Formatar textos com negrito e itálico\n3. Internet\n   • Pesquisar no Google\n   • Enviar e receber e-mails\n\nObserve como cada tópico principal tem numeração automática e os subtópicos usam marcadores com recuo. O seu trabalho deve ficar parecido com este, mas com o seu próprio conteúdo.",
   },
   {
     titulo: "2. Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
@@ -35,6 +37,8 @@ const AULAS = [
       "Nesta aula, os alunos aprendem a trabalhar com tabelas no LibreOffice Writer: inserir uma tabela, adicionar e remover linhas e colunas, mesclar e dividir células, personalizar bordas (espessura, estilo e cor) e aplicar cor de fundo para destacar cabeçalhos. Como atividade prática, cada aluno cria uma tabela formatada, como um quadro de horários ou uma lista de presença.",
     exercicio:
       "Monte um quadro de horários da semana com 6 colunas (Horário, 2ª a 6ª feira) e 4 linhas de horários. Mescle as células do título na primeira linha, aplique cor de fundo no cabeçalho e personalize as bordas com espessura e cor diferentes.",
+    modelo:
+      "Exemplo pronto — Quadro de Horários:\nNa primeira linha, o título \"Quadro de Horários — Semana 1\" ocupa todas as colunas (células mescladas), com fundo azul e letras brancas. Na segunda linha, o cabeçalho: Horário | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira, com fundo cinza. Abaixo, as linhas de horários: 13h às 14h — Writer; 14h às 15h — Writer; 15h às 16h — Calc; 16h às 17h — Exercícios. As bordas da tabela são pretas e mais grossas na parte de fora.\n\nObserve como o título foi mesclado, o cabeçalho tem cor de fundo e as bordas estão personalizadas. O seu trabalho deve ficar parecido com este, mas com os seus próprios horários e matérias.",
   },
 ];
 
@@ -229,6 +233,12 @@ function Index() {
                   <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4">
                     <h4 className="text-sm font-semibold">Exercício prático</h4>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
+                    <div className="mt-3 rounded-md border border-border bg-card p-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                        Texto pronto de exemplo — o aluno fará um parecido
+                      </p>
+                      <p className="mt-2 whitespace-pre-line text-sm leading-relaxed">{aula.modelo}</p>
+                    </div>
                     <div className="mt-3 print:hidden">
                       <label htmlFor={`resposta-${i}`} className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                         Texto do educando (escreva o seu aqui)
