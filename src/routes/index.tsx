@@ -19,6 +19,7 @@ export const Route = createFileRoute("/")({
 const INFO = ["Curso Presencial", "40 Horas", "15 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
 
 const DATA_INICIAL = "Segunda-feira, 16 de novembro de 2026";
+const WHATSAPP_INSTRUTORA = "85997841433";
 
 const AULAS = [
   {
@@ -61,14 +62,14 @@ function Index() {
   const [data, setData] = useState(DATA_INICIAL);
   const [textos, setTextos] = useState<string[]>(AULAS.map((a) => a.texto));
   const [respostas, setRespostas] = useState<string[]>(AULAS.map(() => ""));
-  const [whatsapp, setWhatsapp] = useState("");
+  const [whatsapp, setWhatsapp] = useState(WHATSAPP_INSTRUTORA);
   const [fotos, setFotos] = useState<string[]>(AULAS.map(() => ""));
 
   useEffect(() => {
     setData(load("sobef-data", DATA_INICIAL));
     setTextos(load("sobef-textos", AULAS.map((a) => a.texto)));
     setRespostas(load("sobef-respostas", AULAS.map(() => "")));
-    setWhatsapp(load("sobef-whatsapp", ""));
+    setWhatsapp(load("sobef-whatsapp", WHATSAPP_INSTRUTORA));
   }, []);
 
   useEffect(() => {
