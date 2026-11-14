@@ -101,7 +101,8 @@ function Index() {
       alert("Primeiro preencha o WhatsApp da instrutora no campo acima.");
       return;
     }
-    const msg = `Olá, instrutora Marcilda! Segue a foto do meu trabalho da aula: ${AULAS[i].titulo}. (Anexe a foto aqui na conversa antes de enviar.)`;
+    const titulo = AULAS[i]?.titulo ?? "Aula";
+    const msg = `Olá, instrutora Marcilda! Segue a foto do meu trabalho da aula: ${titulo}. (Anexe a foto aqui na conversa antes de enviar.)`;
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`, "_blank");
   }
 
