@@ -17,6 +17,19 @@ export const Route = createFileRoute("/")({
 
 const INFO = ["Curso Presencial", "40 Horas", "15 Vagas", "Manhã (8h às 12h)", "2ª a 6ª feira"];
 
+const AULAS = [
+  {
+    titulo: "Writer — Marcadores, numeração e listas com vários níveis",
+    texto:
+      "Nesta aula, os alunos aprendem a organizar informações no LibreOffice Writer usando marcadores e numeração automática. O foco é criar listas com vários níveis (tópicos e subtópicos), ajustar o recuo de cada nível, trocar o estilo dos marcadores e reiniciar ou continuar a numeração. Ao final, cada aluno monta um documento com uma lista hierárquica bem estruturada, como um sumário ou um plano de aula.",
+  },
+  {
+    titulo: "Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
+    texto:
+      "Nesta aula, os alunos aprendem a trabalhar com tabelas no LibreOffice Writer: inserir uma tabela, adicionar e remover linhas e colunas, mesclar e dividir células, personalizar bordas (espessura, estilo e cor) e aplicar cor de fundo para destacar cabeçalhos. Como atividade prática, cada aluno cria uma tabela formatada, como um quadro de horários ou uma lista de presença.",
+  },
+];
+
 function copySummary() {
   const text = [
     "Informática Avançada — Atividades",
@@ -63,6 +76,17 @@ function Index() {
             <span className="text-muted-foreground">Executora:</span> <strong>SOBEF</strong>
           </li>
         </ul>
+        <section className="mt-8">
+          <h2 className="text-lg font-bold sm:text-xl">Aulas</h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {AULAS.map((aula) => (
+              <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
+                <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{aula.texto}</p>
+              </article>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );
