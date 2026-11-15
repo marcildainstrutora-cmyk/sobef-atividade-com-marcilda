@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T01:06:54.573Z",
+  "updated_at": "2026-11-15T01:07:43.736Z",
   "messages": [
     {
       "role": "user",
@@ -19,6 +19,15 @@
     {
       "role": "assistant",
       "text": "Claro. O texto fica assim:\n\n**20 vagas**  \n**WhatsApp da instrutora: (85) 99784-1433**\n\nO número permanece como você informou. Você quer que “20 vagas” fique editável na página?"
+    },
+    {
+      "role": "user",
+      "text": "sim",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Sim. O texto pode ficar assim, com **“20 vagas” editável** na página:\n\n**WhatsApp da instrutora: (85) 99784-1433**"
     }
   ]
 }
