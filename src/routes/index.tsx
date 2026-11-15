@@ -34,6 +34,9 @@ const AULAS = [
       "Abaixo de cada tópico, digite os dois subtópicos. Selecione cada par de subtópicos e aplique marcadores.",
       "Use Tab ou Aumentar recuo para colocar os subtópicos em um nível abaixo. Use Shift+Tab ou Diminuir recuo para voltar ao nível principal.",
       "Troque o símbolo dos marcadores pelo estilo de sua preferência. Confira que os tópicos principais continuam numerados e os subtópicos estão recuados.",
+      "Acrescente ao final uma seção chamada Materiais necessários e liste três itens. Faça uma lista numerada separada chamada Etapas da semana com quatro tarefas.",
+      "Reordene uma tarefa usando os comandos de mover item da lista ou recortando e colando a linha. Confira se os números se ajustaram automaticamente.",
+      "Salve o arquivo como plano-de-estudos.odt. Faça uma cópia com outro nome e compare a organização das duas listas.",
     ],
     modelo:
       "PLANO DE ESTUDOS\n\nInformática Básica\nLigar e desligar o computador corretamente\nUsar o mouse e o teclado\n\nLibreOffice Writer\nCriar e salvar um documento\nFormatar textos com negrito e itálico\n\nInternet\nPesquisar informações com segurança\nEnviar e receber e-mails",
@@ -51,6 +54,9 @@ const AULAS = [
       "Insira uma linha acima dos cabeçalhos. Selecione suas seis células e use Mesclar células para criar uma única célula de título; digite nela Quadro de Horários — Semana 1.",
       "Aplique fundo azul e letras brancas à célula do título. Aplique fundo cinza à linha de cabeçalho e deixe os nomes dos dias em negrito.",
       "Personalize as bordas: deixe a borda externa preta e mais grossa e mantenha linhas internas visíveis. Confira se todos os horários e dias estão nas células corretas.",
+      "Acrescente uma linha de intervalo às 15h e mescle as cinco células dos dias para escrever Intervalo. Centralize o texto e aplique uma cor de fundo diferente.",
+      "Adicione uma coluna chamada Sala e preencha com Sala 1 nos horários de Writer e Sala 2 nos horários de Calc. Ajuste a largura sem deixar o texto cortado.",
+      "Alinhe os horários e nomes das atividades, confira se cada dado está na célula certa e salve o arquivo como quadro-de-horarios.odt.",
     ],
     modelo:
       "HORÁRIO | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira\n13h às 14h | Writer | Writer | Writer | Writer | Writer\n14h às 15h | Writer | Writer | Writer | Writer | Writer\n15h às 16h | Calc | Calc | Calc | Calc | Calc\n16h às 17h | Exercícios | Exercícios | Exercícios | Exercícios | Exercícios",
@@ -60,6 +66,7 @@ const AULAS = [
       "Os cabeçalhos e os quatro horários estão preenchidos corretamente.",
       "O título tem fundo azul e letras brancas; o cabeçalho tem fundo cinza.",
       "A borda externa preta e mais grossa e as linhas internas estão visíveis.",
+      "A linha de intervalo está mesclada e a coluna Sala foi preenchida.",
     ],
   },
   {
@@ -74,6 +81,9 @@ const AULAS = [
       "Inicie o Assistente de Mala Direta ou conecte a fonte de dados salva. Selecione a planilha e a folha que contém os quatro registros.",
       "Substitua «Nome», «Bairro» e «Curso» pelos campos correspondentes da fonte de dados nos locais indicados na carta.",
       "Visualize cada registro antes de concluir. Confira se saudação, bairro e curso correspondem à mesma pessoa e gere as cartas personalizadas.",
+      "Acrescente à planilha uma coluna fictícia chamada Data de inscrição e outra chamada Turma. Use datas e nomes inventados e insira os campos na carta.",
+      "Faça uma segunda versão do texto com uma mensagem diferente para cada curso, usando uma condição disponível no assistente, se estiver habilitada.",
+      "Revise a primeira e a última carta da mesclagem, confira a quantidade gerada e salve o documento principal e as cartas em arquivos separados.",
     ],
     modelo:
       "BOAS-VINDAS AO CURSO\n\nFortaleza, 16 de novembro de 2026\n\nOlá, «Nome»!\n\nSeja bem-vindo(a) ao curso de «Curso». Ficamos felizes em receber você, morador(a) do bairro «Bairro», nesta nova etapa de aprendizagem.\n\nNas aulas, vamos aprender a criar e formatar documentos, organizar informações e usar ferramentas digitais com responsabilidade. Participe das atividades, faça perguntas e pratique cada etapa no computador.\n\nAs aulas acontecerão de segunda a sexta-feira, no período da tarde. Traga seu caderno e venha preparado(a) para aprender.\n\nAtenciosamente,\nEquipe do curso",
@@ -83,6 +93,7 @@ const AULAS = [
       "Os campos de mala direta estão nos lugares certos, sem marcadores digitados por engano.",
       "A visualização mostra os dados do mesmo registro em todos os campos da carta.",
       "Foram geradas quatro cartas e cada uma apresenta um destinatário fictício diferente.",
+      "A data de inscrição e a turma aparecem vinculadas ao registro correto, se incluídas.",
     ],
   },
   {
@@ -97,6 +108,9 @@ const AULAS = [
       "Coloque o cursor depois do título principal e antes da primeira seção. Use Inserir > Sumário e Índice > Sumário, Índice ou Bibliografia para inserir um sumário automático.",
       "Insira números de página no rodapé usando Inserir > Número da página. Confira se a numeração aparece nas páginas do documento.",
       "Se alterar um cabeçalho ou acrescentar conteúdo, clique com o botão direito no sumário e escolha Atualizar índice. Confira a ordem das seções e mantenha a fonte consultada ao final.",
+      "Acrescente uma seção chamada Como criar uma senha segura, com dois parágrafos e três recomendações em lista. Aplique Título 2 ao novo cabeçalho.",
+      "Inclua uma nota de rodapé explicando uma palavra técnica e acrescente uma referência fictícia claramente identificada como exemplo, sem apresentá-la como fonte consultada de verdade.",
+      "Atualize o sumário depois das alterações, confira os números de página e aplique espaçamento consistente entre títulos e parágrafos.",
     ],
     modelo:
       "USO RESPONSÁVEL DA INTERNET\n\nINTRODUÇÃO\nA internet facilita o acesso à informação, aos estudos e à comunicação. Para aproveitar esses recursos, precisamos agir com atenção, respeito e responsabilidade.\n\nPROTEÇÃO DE DADOS\nUse senhas difíceis de adivinhar e não compartilhe endereço, telefone, senhas ou outras informações pessoais com desconhecidos. Antes de preencher um cadastro, confira se o site é confiável e peça ajuda a um adulto quando tiver dúvida.\n\nCOMUNICAÇÃO RESPEITOSA\nEscreva com educação, respeite opiniões diferentes e pense antes de publicar uma mensagem. Não compartilhe conteúdo que humilhe ou exponha outra pessoa. Se receber algo que cause desconforto, converse com um adulto de confiança.\n\nVERIFICAÇÃO DE INFORMAÇÕES\nAntes de acreditar ou compartilhar uma notícia, confira quem publicou, quando foi publicada e quais fontes são apresentadas. Compare a informação com outros canais confiáveis e não repasse mensagens que você não conseguiu verificar.\n\nFONTES CONSULTADAS\nOrganização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO). Alfabetização midiática e informacional. Consulte materiais educativos sobre segurança e cidadania digital.",
@@ -106,6 +120,7 @@ const AULAS = [
       "A numeração aparece no rodapé das páginas.",
       "Após qualquer mudança nos títulos, o sumário foi atualizado.",
       "A seção Fontes consultadas está no final e contém a referência indicada.",
+      "A nova seção e a nota de rodapé aparecem e a paginação continua correta.",
     ],
   },
   {
@@ -120,6 +135,9 @@ const AULAS = [
       "Aplique negrito e tamanho maior ao título. Ajuste a fonte dos parágrafos e teste alinhamento à esquerda e centralizado.",
       "Ajuste o espaçamento entre parágrafos para separar as ideias sem inserir várias linhas vazias.",
       "Aplique estilos de título aos subtítulos e Corpo de texto aos parágrafos. Salve o arquivo com um nome claro.",
+      "Acrescente uma lista com quatro ferramentas digitais que pretende aprender a usar e escreva uma frase explicando cada uma.",
+      "Duplique um parágrafo e experimente alterar cor, tamanho, alinhamento e espaçamento. Em seguida, desfaça as mudanças e aplique um estilo para restaurar a consistência.",
+      "Use localizar e substituir para trocar uma palavra repetida. Revise a ortografia, salve o documento e exporte uma cópia em PDF.",
     ],
     modelo:
       "INFORMÁTICA AVANÇADA NA SOBEF\n\nO QUE VAMOS APRENDER\nVamos praticar a criação de documentos e a organização de informações em planilhas. Cada atividade apresenta etapas para experimentar os recursos e revisar o resultado.\n\nCOMO PARTICIPAR\nSalve seus arquivos com nomes fáceis de identificar. Revise o conteúdo antes de compartilhar e peça orientação quando uma ferramenta aparecer em outro lugar na tela.",
@@ -128,6 +146,8 @@ const AULAS = [
       "Os parágrafos usam fonte e tamanho legíveis e mantêm alinhamento consistente.",
       "O espaçamento separa os parágrafos sem linhas vazias excessivas.",
       "O arquivo foi salvo com um nome fácil de reconhecer.",
+      "A lista de ferramentas está organizada e a revisão não deixou erros conhecidos.",
+      "O documento original e a cópia em PDF foram salvos.",
     ],
   },
   {
@@ -142,6 +162,9 @@ const AULAS = [
       "Acrescente um cabeçalho com o nome da atividade, um rodapé com a identificação do curso e numeração de página.",
       "Ajuste margens e, se desejar, distribua uma seção em duas colunas. Confira a leitura em cada página e corrija quebras indesejadas.",
       "Use a revisão ortográfica, faça uma correção de exemplo e acrescente um comentário. Depois, exporte uma cópia em PDF e confira o arquivo gerado.",
+      "Insira uma forma com uma dica curta de segurança e aplique preenchimento e contorno que mantenham o texto legível.",
+      "Acrescente uma legenda à imagem e texto alternativo que descreva seu conteúdo. Confira se a imagem não ficou pixelada nem encobriu informações.",
+      "Revise o folheto em visualização de impressão, confira cabeçalho e rodapé em todas as páginas e remova qualquer comentário que não deva aparecer na versão final.",
     ],
     modelo:
       "CUIDADOS COM OS DISPOSITIVOS\n\nPROTEJA SEUS DADOS\nUse senhas fortes e não compartilhe informações pessoais em páginas ou mensagens desconhecidas.\n\nCUIDE DOS EQUIPAMENTOS\nMantenha notebook, tablet e celular protegidos contra quedas e líquidos. Guarde os arquivos importantes em local seguro.\n\nREVISE ANTES DE COMPARTILHAR\nConfira o texto, as imagens e a origem das informações antes de enviar ou publicar um documento.",
@@ -151,6 +174,7 @@ const AULAS = [
       "Margens e colunas mantêm o conteúdo dentro da página.",
       "A revisão ortográfica e o comentário foram conferidos.",
       "O documento original e a cópia em PDF foram salvos e abertos para conferência.",
+      "A imagem tem legenda e texto alternativo e a forma apresenta uma dica legível.",
     ],
   },
   {
@@ -166,6 +190,9 @@ const AULAS = [
       "Use uma referência absoluta para um valor fixo, como a nota mínima. Confira o símbolo de cifrão na referência antes de copiar a fórmula.",
       "Calcule soma, média, maior e menor valor com as funções correspondentes. Crie uma coluna Resultado usando SE e teste as condições.",
       "Acrescente uma data e uma função de texto para combinar ou organizar informações. Salve a planilha e confira os resultados.",
+      "Crie uma coluna Frequência com valores fictícios e uma coluna Situação que indique se a frequência atende ao mínimo definido pelo exercício.",
+      "Aplique bordas ao intervalo, destaque as notas abaixo da média com formatação condicional e crie um gráfico simples para comparar as médias.",
+      "Altere uma nota e confira se médias, resultados e gráfico são atualizados. Corrija erros de fórmula e salve uma cópia final da atividade.",
     ],
     modelo:
       "ESTUDANTE | NOTA 1 | NOTA 2 | MÉDIA | RESULTADO\nAna | 8 | 7 |  |  \nBeto | 5 | 6 |  |  \nCaio | 9 | 10 |  |  \nDara | 6 | 7 |  |  \n\nNota mínima para aprovação: 6",
@@ -175,6 +202,7 @@ const AULAS = [
       "Soma, média, máximo e mínimo apresentam resultados coerentes.",
       "A função SE identifica corretamente cada resultado em relação à nota mínima.",
       "A planilha inclui um exemplo de função de texto e uma data formatada.",
+      "Frequência, formatação condicional e gráfico foram conferidos após alterar um valor.",
     ],
   },
   {
@@ -190,6 +218,9 @@ const AULAS = [
       "Insira um gráfico a partir do resumo. Escolha um tipo que facilite a comparação e inclua título e identificação das categorias.",
       "Use validação de dados para limitar as opções de uma coluna. Proteja as células com fórmulas e confira se os campos de entrada continuam editáveis.",
       "Revise os dados, fórmulas, filtros e gráfico. Salve o projeto com um nome que identifique a atividade e confira se abre corretamente.",
+      "Acrescente colunas fictícias para data de inscrição e modalidade. Formate as datas e filtre os registros por período e modalidade.",
+      "Crie uma segunda tabela dinâmica para comparar inscrições por turma e situação. Confira se os totais batem com os registros da planilha.",
+      "Adicione uma folha de instruções com o objetivo do projeto, explique duas fórmulas usadas e inclua a data da revisão. Mantenha todos os dados inventados.",
     ],
     modelo:
       "INSCRIÇÕES FICTÍCIAS\nNOME | CURSO | SITUAÇÃO | TURMA\nLia | Writer | Confirmada | Manhã\nNilo | Calc | Pendente | Tarde\nRavi | Writer | Confirmada | Tarde\nSusi | Calc | Confirmada | Manhã\n\nRESUMO POR CURSO\nWriter | 2 inscrições\nCalc | 2 inscrições",
@@ -200,6 +231,9 @@ const AULAS = [
       "A formatação condicional destaca a situação escolhida.",
       "A tabela dinâmica e o gráfico representam corretamente o resumo por curso.",
       "A validação e a proteção de células foram conferidas e o arquivo final foi salvo.",
+      "As datas e a modalidade permitem filtrar os registros conforme o período escolhido.",
+      "Os dois resumos por turma e situação conferem com os registros fictícios.",
+      "A folha de instruções explica o projeto e as fórmulas sem usar dados pessoais reais.",
     ],
   },
 ];
