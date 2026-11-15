@@ -305,7 +305,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-5 py-5">
-          <img src={logo.url} alt="Logo Marcilda Pereira" className="h-16 w-16 shrink-0 sm:h-20 sm:w-20" />
+          <img src={logo.url} alt="Logo Marcilda Pereira" className="h-20 w-20 shrink-0 sm:h-24 sm:w-24" />
           <div className="min-w-0">
             <span className="inline-block rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
               Curso Presencial • 2026
@@ -313,7 +313,7 @@ function Index() {
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
               Informática Avançada — Atividades SOBEF
             </h1>
-            <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">SOBEF — Qualificação Profissional • Instrutora: Marcilda Pereira</p>
+            <p className="mt-1 text-xl font-bold text-foreground sm:text-2xl">Instrutora: Marcilda Pereira</p>
             <p className="mt-1 text-sm font-medium text-muted-foreground">Carga horária: 100 h (25 aulas de 4 h) • Período a definir</p>
             <p className="mt-1 text-sm font-medium text-muted-foreground">Horário: 13h às 17h • Vagas: 20 • Executora: SOBEF</p>
           </div>
