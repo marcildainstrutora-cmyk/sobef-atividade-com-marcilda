@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T02:50:06.184Z",
+  "updated_at": "2026-11-15T02:50:52.571Z",
   "messages": [
     {
       "role": "user",
@@ -358,6 +358,15 @@
     {
       "role": "assistant",
       "text": "A forma mais fácil é copiar o link da atividade e enviá-lo no grupo da turma pelo WhatsApp. No GitHub, abra a página publicada, copie o endereço na barra do navegador e cole na conversa dos alunos.\n\nSe a página ainda não estiver publicada ou você não souber onde copiar o link, diga por qual plataforma seus alunos acessam as atividades (por exemplo, WhatsApp, Google Classroom ou outra) que eu te oriento."
+    },
+    {
+      "role": "user",
+      "text": "GitHub",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Você quer ajuda com o GitHub para encontrar e compartilhar o link da atividade com seus alunos? Se sim, acesse o repositório `marcildainstrutora-cmyk/sobef-atividade-com-marcilda` e me diga o que aparece na página principal."
     }
   ]
 }
