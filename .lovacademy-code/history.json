@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T01:04:31.580Z",
+  "updated_at": "2026-11-15T01:06:54.573Z",
   "messages": [
     {
       "role": "user",
@@ -10,6 +10,15 @@
     {
       "role": "assistant",
       "text": "Se você quis dizer “WhatsApp da instrutora”, o texto pode ficar assim:\n\n**20 vagas • WhatsApp da instrutora: (85) 99784-1433**"
+    },
+    {
+      "role": "user",
+      "text": "poode deixar o 20 vagas coloque editavek,  WhatsApp da instrutora: (85) 99784-1433 deixa meu numero",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Claro. O texto fica assim:\n\n**20 vagas**  \n**WhatsApp da instrutora: (85) 99784-1433**\n\nO número permanece como você informou. Você quer que “20 vagas” fique editável na página?"
     }
   ]
 }
