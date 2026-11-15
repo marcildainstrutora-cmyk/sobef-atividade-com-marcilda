@@ -37,13 +37,7 @@ const AULAS = [
     ],
     modelo:
       "PLANO DE ESTUDOS\n\nInformática Básica\nLigar e desligar o computador corretamente\nUsar o mouse e o teclado\n\nLibreOffice Writer\nCriar e salvar um documento\nFormatar textos com negrito e itálico\n\nInternet\nPesquisar informações com segurança\nEnviar e receber e-mails",
-    conferencia: [
-      "O título Plano de Estudos está destacado e centralizado.",
-      "Os três tópicos principais têm numeração automática.",
-      "Cada tópico contém dois subtópicos com marcadores.",
-      "Os subtópicos aparecem recuados abaixo de seus tópicos principais.",
-      "O documento está organizado e sem linhas fora da lista por engano.",
-    ],
+    conferencia: [],
   },
   {
     titulo: "2. Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
@@ -301,15 +295,19 @@ function Index() {
                   <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
                   <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4">
-                    <h4 className="text-sm font-semibold">Checklist para conferir</h4>
-                    <ul className="mt-2 space-y-2 text-sm leading-relaxed">
-                      {aula.conferencia.map((item) => (
-                        <li key={item} className="flex items-start gap-2">
-                          <span aria-hidden="true" className="mt-0.5 inline-flex h-4 w-4 shrink-0 rounded border border-input bg-background" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {aula.conferencia.length > 0 && (
+                      <>
+                        <h4 className="text-sm font-semibold">Checklist para conferir</h4>
+                        <ul className="mt-2 space-y-2 text-sm leading-relaxed">
+                          {aula.conferencia.map((item) => (
+                            <li key={item} className="flex items-start gap-2">
+                              <span aria-hidden="true" className="mt-0.5 inline-flex h-4 w-4 shrink-0 rounded border border-input bg-background" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
                     <div className="mt-4 rounded-md border border-border bg-card p-3">
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Texto de referência</p>
                       <pre className="mt-2 whitespace-pre-wrap font-sans text-sm leading-relaxed">{aula.modelo}</pre>
