@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const INFO = ["Curso Presencial", "40 Horas", "20 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
+const INFO = ["Curso Presencial", "40 Horas", "Vagas: 20", "Horário: 13h às 17h", "2ª a 6ª feira", "Acesso em notebook, tablet e celular"];
 
 const DATA_INICIAL = "Segunda-feira, 16 de novembro de 2026";
 const WHATSAPP_INSTRUTORA = "85997841433";
@@ -108,6 +108,100 @@ const AULAS = [
       "A seção Fontes consultadas está no final e contém a referência indicada.",
     ],
   },
+  {
+    titulo: "5. Writer — Interface, formatação e estilos de texto",
+    texto:
+      "Conheça a interface do Writer e pratique a criação de documentos. A atividade trabalha fontes, tamanhos, alinhamento, espaçamento entre parágrafos e estilos de título e corpo de texto, preparando o documento para ficar organizado e fácil de ler.",
+    exercicio:
+      "Crie um pequeno informativo sobre o curso no Writer. Organize o conteúdo com título, subtítulos e parágrafos e aplique formatação consistente.",
+    passos: [
+      "Abra um documento novo no Writer e identifique a barra de ferramentas, a régua, a área de digitação e os controles de fonte. Em tablet ou celular, os menus podem aparecer em posições diferentes.",
+      "Digite o título Informática Avançada na SOBEF e os subtítulos O que vamos aprender e Como participar.",
+      "Aplique negrito e tamanho maior ao título. Ajuste a fonte dos parágrafos e teste alinhamento à esquerda e centralizado.",
+      "Ajuste o espaçamento entre parágrafos para separar as ideias sem inserir várias linhas vazias.",
+      "Aplique estilos de título aos subtítulos e Corpo de texto aos parágrafos. Salve o arquivo com um nome claro.",
+    ],
+    modelo:
+      "INFORMÁTICA AVANÇADA NA SOBEF\n\nO QUE VAMOS APRENDER\nVamos praticar a criação de documentos e a organização de informações em planilhas. Cada atividade apresenta etapas para experimentar os recursos e revisar o resultado.\n\nCOMO PARTICIPAR\nSalve seus arquivos com nomes fáceis de identificar. Revise o conteúdo antes de compartilhar e peça orientação quando uma ferramenta aparecer em outro lugar na tela.",
+    conferencia: [
+      "O documento tem um título e dois subtítulos com estilos aplicados.",
+      "Os parágrafos usam fonte e tamanho legíveis e mantêm alinhamento consistente.",
+      "O espaçamento separa os parágrafos sem linhas vazias excessivas.",
+      "O arquivo foi salvo com um nome fácil de reconhecer.",
+    ],
+  },
+  {
+    titulo: "6. Writer — Imagens, layout, cabeçalho e revisão",
+    texto:
+      "Insira imagens e formas, ajuste a posição do texto ao redor delas e organize as páginas com cabeçalho, rodapé, numeração e colunas. Finalize revisando ortografia e comentários e exportando o documento para PDF.",
+    exercicio:
+      "Monte um folheto de uma página sobre cuidados com os dispositivos digitais. Organize o texto e uma imagem, revise o documento e prepare uma cópia em PDF.",
+    passos: [
+      "Digite o título Cuidados com os dispositivos e escreva os tópicos do modelo. Insira uma imagem apropriada e redimensione pelos cantos para manter suas proporções.",
+      "Experimente as opções de disposição do texto para posicionar a imagem sem cobrir os parágrafos. Em telas menores, use os controles de imagem disponíveis no menu.",
+      "Acrescente um cabeçalho com o nome da atividade, um rodapé com a identificação do curso e numeração de página.",
+      "Ajuste margens e, se desejar, distribua uma seção em duas colunas. Confira a leitura em cada página e corrija quebras indesejadas.",
+      "Use a revisão ortográfica, faça uma correção de exemplo e acrescente um comentário. Depois, exporte uma cópia em PDF e confira o arquivo gerado.",
+    ],
+    modelo:
+      "CUIDADOS COM OS DISPOSITIVOS\n\nPROTEJA SEUS DADOS\nUse senhas fortes e não compartilhe informações pessoais em páginas ou mensagens desconhecidas.\n\nCUIDE DOS EQUIPAMENTOS\nMantenha notebook, tablet e celular protegidos contra quedas e líquidos. Guarde os arquivos importantes em local seguro.\n\nREVISE ANTES DE COMPARTILHAR\nConfira o texto, as imagens e a origem das informações antes de enviar ou publicar um documento.",
+    conferencia: [
+      "A imagem está dimensionada sem distorção e o texto continua legível ao redor dela.",
+      "O cabeçalho e o rodapé aparecem nas páginas e a numeração está correta.",
+      "Margens e colunas mantêm o conteúdo dentro da página.",
+      "A revisão ortográfica e o comentário foram conferidos.",
+      "O documento original e a cópia em PDF foram salvos e abertos para conferência.",
+    ],
+  },
+  {
+    titulo: "7. Calc — Células, formatação, fórmulas e funções",
+    texto:
+      "Conheça a interface do Calc e organize informações em células, linhas e colunas. Pratique formatos de dados, referências relativas e absolutas, operações básicas, funções de soma, média, máximo e mínimo, além de funções SE, texto e data.",
+    exercicio:
+      "Monte uma planilha de notas fictícias. Calcule totais e médias, identifique a maior e a menor nota e use uma condição para indicar o resultado de cada estudante.",
+    passos: [
+      "Abra o Calc e identifique a barra de fórmulas, as letras das colunas, os números das linhas e as células. Digite os dados do modelo em uma planilha nova.",
+      "Formate os títulos, ajuste a largura das colunas e aplique formato numérico adequado às notas e datas.",
+      "Crie uma fórmula simples para somar duas notas e copie-a para as demais linhas. Observe como a referência relativa acompanha cada linha.",
+      "Use uma referência absoluta para um valor fixo, como a nota mínima. Confira o símbolo de cifrão na referência antes de copiar a fórmula.",
+      "Calcule soma, média, maior e menor valor com as funções correspondentes. Crie uma coluna Resultado usando SE e teste as condições.",
+      "Acrescente uma data e uma função de texto para combinar ou organizar informações. Salve a planilha e confira os resultados.",
+    ],
+    modelo:
+      "ESTUDANTE | NOTA 1 | NOTA 2 | MÉDIA | RESULTADO\nAna | 8 | 7 |  |  \nBeto | 5 | 6 |  |  \nCaio | 9 | 10 |  |  \nDara | 6 | 7 |  |  \n\nNota mínima para aprovação: 6",
+    conferencia: [
+      "Os dados estão organizados em colunas com títulos e formatos adequados.",
+      "As fórmulas foram copiadas sem apontar para linhas erradas.",
+      "Soma, média, máximo e mínimo apresentam resultados coerentes.",
+      "A função SE identifica corretamente cada resultado em relação à nota mínima.",
+      "A planilha inclui um exemplo de função de texto e uma data formatada.",
+    ],
+  },
+  {
+    titulo: "8. Calc — Busca, filtros, gráficos e projeto final",
+    texto:
+      "Aplique funções de procura para localizar dados e use classificação, filtros, formatação condicional, tabelas dinâmicas e gráficos para analisar uma planilha. Termine com validação de dados, proteção de células e um projeto de revisão geral.",
+    exercicio:
+      "Crie uma planilha fictícia de inscrições em cursos. Organize os dados, localize registros, analise resultados com um gráfico e proteja as células que contêm fórmulas.",
+    passos: [
+      "Digite os registros fictícios do modelo e transforme o intervalo em uma tabela organizada, com cabeçalhos claros e sem linhas vazias no meio dos dados.",
+      "Ordene a lista por curso e use filtros para exibir somente os registros desejados. Experimente PROCV ou PROCH em uma pequena tabela de consulta.",
+      "Aplique formatação condicional para destacar uma situação, como inscrições confirmadas. Crie uma tabela dinâmica para resumir a quantidade por curso.",
+      "Insira um gráfico a partir do resumo. Escolha um tipo que facilite a comparação e inclua título e identificação das categorias.",
+      "Use validação de dados para limitar as opções de uma coluna. Proteja as células com fórmulas e confira se os campos de entrada continuam editáveis.",
+      "Revise os dados, fórmulas, filtros e gráfico. Salve o projeto com um nome que identifique a atividade e confira se abre corretamente.",
+    ],
+    modelo:
+      "INSCRIÇÕES FICTÍCIAS\nNOME | CURSO | SITUAÇÃO | TURMA\nLia | Writer | Confirmada | Manhã\nNilo | Calc | Pendente | Tarde\nRavi | Writer | Confirmada | Tarde\nSusi | Calc | Confirmada | Manhã\n\nRESUMO POR CURSO\nWriter | 2 inscrições\nCalc | 2 inscrições",
+    conferencia: [
+      "Os registros são fictícios e estão organizados com cabeçalhos e formatos coerentes.",
+      "A classificação e os filtros exibem os registros esperados.",
+      "Uma função de procura localiza corretamente um valor na tabela de consulta.",
+      "A formatação condicional destaca a situação escolhida.",
+      "A tabela dinâmica e o gráfico representam corretamente o resumo por curso.",
+      "A validação e a proteção de células foram conferidas e o arquivo final foi salvo.",
+    ],
+  },
 ];
 
 function load<T>(key: string, fallback: T): T {
@@ -121,8 +215,8 @@ function load<T>(key: string, fallback: T): T {
 
 function copySummary() {
   const text = [
-    "Informática Avançada — Atividades",
-    "Cursos de Qualificação — ESBC x SOBEF • Instrutora: Marcilda Pereira",
+    "Informática Avançada — Atividades SOBEF",
+    "SOBEF — Qualificação Profissional • Instrutora: Marcilda Pereira",
     ...INFO,
     "Executora: SOBEF",
   ].join("\n");
@@ -183,9 +277,9 @@ function Index() {
               Curso Presencial • 2026
             </span>
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
-              Informática Avançada — Atividades 9
+              Informática Avançada — Atividades SOBEF
             </h1>
-            <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">Cursos de Qualificação — ESBC x SOBEF • Instrutora: Marcilda Pereira</p>
+            <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">SOBEF — Qualificação Profissional • Instrutora: Marcilda Pereira</p>
           </div>
         </div>
       </header>
