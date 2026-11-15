@@ -183,7 +183,7 @@ function Index() {
               Curso Presencial • 2026
             </span>
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
-              Informática Avançada — Atividades
+              Informática Avançada — Atividades 9
             </h1>
             <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">Cursos de Qualificação — ESBC x SOBEF • Instrutora: Marcilda Pereira</p>
           </div>
