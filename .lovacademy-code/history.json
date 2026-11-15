@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T03:01:37.428Z",
+  "updated_at": "2026-11-15T03:05:23.385Z",
   "messages": [
     {
       "role": "user",
@@ -403,6 +403,15 @@
     {
       "role": "assistant",
       "text": "Se nenhum endereço aparece em **Configurações → Páginas**, o site provavelmente ainda não foi publicado. Nessa tela, procure **Criar implantação** ou **Fonte de compilação** e veja se é possível escolher a branch `main` e a pasta `/ (root)`. Depois toque em **Salvar**. O GitHub pode levar alguns minutos para publicar; então o endereço aparecerá em **Páginas**.\n\nSe essas opções também não aparecerem, me diga o que você vê nessa tela para eu orientar o próximo passo."
+    },
+    {
+      "role": "user",
+      "text": "n achei",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Vamos tentar pelo celular, bem devagar:\n\n1. Abra o repositório no GitHub.\n2. Toque em **⋯** ou no menu **☰** e escolha **Configurações**.\n3. Role a tela e procure **Páginas**.\n\nSe **Páginas** não aparecer, me diga se você está usando o aplicativo do GitHub ou o site no navegador."
     }
   ]
 }
