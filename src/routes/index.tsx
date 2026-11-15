@@ -284,16 +284,6 @@ function Index() {
                   </div>
                   <label htmlFor={`texto-aula-${i}`} className="mt-4 block text-sm font-semibold">Texto modelo para digitar no Writer</label>
                   <pre className="mt-2 whitespace-pre-wrap rounded-md border border-border bg-background p-3 font-sans text-sm leading-relaxed">{aula.modelo}</pre>
-                  <label htmlFor={`anotacoes-aula-${i}`} className="mt-4 block text-sm font-semibold">Minhas anotações</label>
-                  <textarea
-                    id={`anotacoes-aula-${i}`}
-                    value={textos[i]}
-                    onChange={(e) =>
-                      setTextos((prev) => prev.map((t, j) => (j === i ? e.target.value : t)))
-                    }
-                    rows={4}
-                    className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus:ring-2 focus:ring-ring"
-                  />
                 </article>
               ))}
             </div>
