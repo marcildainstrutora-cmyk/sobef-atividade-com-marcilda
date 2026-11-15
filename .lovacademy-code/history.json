@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T02:47:23.673Z",
+  "updated_at": "2026-11-15T02:48:06.099Z",
   "messages": [
     {
       "role": "user",
@@ -312,6 +312,15 @@
     {
       "role": "user",
       "text": "WhatsApp da instrutora: 85 99784-1433",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "O WhatsApp da instrutora já está configurado como 85 99784-1433 no campo editável e no texto da página. Nenhuma alteração é necessária.\n\nNenhuma alteração foi publicada no GitHub."
+    },
+    {
+      "role": "user",
+      "text": "inclua o WhatsApp da instrutora: 85 99784-1433.",
       "attachments": []
     },
     {
