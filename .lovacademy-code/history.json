@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T02:49:10.699Z",
+  "updated_at": "2026-11-15T02:50:06.184Z",
   "messages": [
     {
       "role": "user",
@@ -349,6 +349,15 @@
     {
       "role": "assistant",
       "text": "Entendi. Se o WhatsApp não aparece na página, preciso saber onde você esperava encontrá-lo — por exemplo, no título, no corpo da atividade ou em um botão de contato. Nesta conversa não tenho acesso à página para conferir a exibição."
+    },
+    {
+      "role": "user",
+      "text": "agora como faço para mandar por meus alunos ? da forma mais facil",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "A forma mais fácil é copiar o link da atividade e enviá-lo no grupo da turma pelo WhatsApp. No GitHub, abra a página publicada, copie o endereço na barra do navegador e cole na conversa dos alunos.\n\nSe a página ainda não estiver publicada ou você não souber onde copiar o link, diga por qual plataforma seus alunos acessam as atividades (por exemplo, WhatsApp, Google Classroom ou outra) que eu te oriento."
     }
   ]
 }
