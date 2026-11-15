@@ -40,6 +40,24 @@ const AULAS = [
     modelo:
       "Exemplo para você observar e fazer parecido no Writer:\n\nQuadro de Horários — Semana 1\nHorário | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira\n13h às 14h | Writer | Writer | Writer | Writer | Writer\n14h às 15h | Writer | Writer | Writer | Writer | Writer\n15h às 16h | Calc | Calc | Calc | Calc | Calc\n16h às 17h | Exercícios | Exercícios | Exercícios | Exercícios | Exercícios\n\nNo Writer, transforme este modelo em uma tabela: mescle as células da primeira linha para o título ocupar todas as colunas, aplique fundo azul e letras brancas ao título, e fundo cinza ao cabeçalho. Faça a borda externa preta e mais grossa. Depois, crie sua própria versão, escolhendo horários e matérias para preencher os dias da semana.",
   },
+  {
+    titulo: "3. Writer — Mala direta: cartas personalizadas",
+    texto:
+      "Nesta aula, os alunos organizam informações de destinatários em uma fonte de dados e usam a mala direta para criar cartas personalizadas. A atividade trabalha a conexão entre os dados e o documento, a inserção de campos e a conferência do resultado antes de concluir a mesclagem.",
+    exercicio:
+      "Crie uma fonte de dados com quatro registros fictícios, contendo nome, bairro e curso. No Writer, prepare uma carta de boas-vindas com título, saudação, parágrafo de apresentação e assinatura. Insira os campos de nome, bairro e curso nos lugares indicados. Faça a mesclagem para gerar uma carta para cada registro e confira se os dados aparecem corretamente.",
+    modelo:
+      "Modelo de carta personalizada:\n\nBOAS-VINDAS AO CURSO\n\nFortaleza, 16 de novembro de 2026\n\nOlá, «Nome»!\n\nSeja bem-vindo(a) ao curso de «Curso». Ficamos felizes em receber você, morador(a) do bairro «Bairro», nesta nova etapa de aprendizagem.\n\nAs aulas acontecerão de segunda a sexta-feira, no período da tarde. Traga seu caderno e venha preparado(a) para aprender.\n\nAtenciosamente,\nEquipe do curso\n\nSubstitua os campos entre « » pelos campos da fonte de dados. Ao mesclar, cada carta deverá apresentar as informações do respectivo registro.",
+  },
+  {
+    titulo: "4. Writer — Estilos, sumário automático e referências",
+    texto:
+      "Nesta aula, os alunos aplicam estilos de título e corpo de texto para organizar um documento longo. Depois, inserem um sumário automático, atualizam sua estrutura após alterações e acrescentam uma nota de referência ao final do documento.",
+    exercicio:
+      "Produza um pequeno guia com o título \"Uso responsável da internet\". Inclua uma introdução e três seções: proteção de dados, comunicação respeitosa e verificação de informações. Aplique estilos de título aos cabeçalhos e estilo de corpo aos parágrafos. Insira um sumário automático após o título, numere as páginas e acrescente ao final uma seção de fontes consultadas. Atualize o sumário depois de concluir o texto.",
+    modelo:
+      "Modelo de organização do documento:\n\nUSO RESPONSÁVEL DA INTERNET\n\nSUMÁRIO\n1. Introdução\n2. Proteção de dados\n3. Comunicação respeitosa\n4. Verificação de informações\n5. Fontes consultadas\n\n1. INTRODUÇÃO\nA internet facilita o acesso à informação e a comunicação. Para aproveitá-la com segurança, é importante adotar atitudes responsáveis.\n\n2. PROTEÇÃO DE DADOS\nUse senhas seguras e não compartilhe informações pessoais com desconhecidos.\n\n3. COMUNICAÇÃO RESPEITOSA\nEscreva com educação, respeite opiniões diferentes e pense antes de publicar.\n\n4. VERIFICAÇÃO DE INFORMAÇÕES\nConfira a autoria, a data e a fonte antes de compartilhar uma notícia.\n\n5. FONTES CONSULTADAS\nNome da instituição ou do site. Título da página consultada. Data de acesso.\n\nNo Writer, aplique estilos aos títulos das seções e gere o sumário automático a partir deles. A aparência do sumário pode ser diferente deste exemplo, mas deve listar as seções na ordem do documento.",
+  },
 ];
 
 function load<T>(key: string, fallback: T): T {
@@ -177,7 +195,7 @@ function Index() {
                 : "border border-border bg-card hover:bg-accent"
             }`}
           >
-            Editar textos
+            Digitação do texto
           </button>
           <button
             onClick={() => setAba("formatado")}
