@@ -1,12 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T03:05:23.385Z",
+  "updated_at": "2026-11-15T03:07:56.661Z",
   "messages": [
-    {
-      "role": "user",
-      "text": "tire essa parte ESBC x, coloque 20 Vagas, 85 997841433 what instrutora",
-      "attachments": []
-    },
     {
       "role": "assistant",
       "text": "Se você quis dizer “WhatsApp da instrutora”, o texto pode ficar assim:\n\n**20 vagas • WhatsApp da instrutora: (85) 99784-1433**"
@@ -412,6 +407,15 @@
     {
       "role": "assistant",
       "text": "Vamos tentar pelo celular, bem devagar:\n\n1. Abra o repositório no GitHub.\n2. Toque em **⋯** ou no menu **☰** e escolha **Configurações**.\n3. Role a tela e procure **Páginas**.\n\nSe **Páginas** não aparecer, me diga se você está usando o aplicativo do GitHub ou o site no navegador."
+    },
+    {
+      "role": "user",
+      "text": "Páginas do GitHub\nO GitHub Pages foi projetado para hospedar suas páginas pessoais, organizacionais ou de projetos a partir de um repositório do GitHub.\n\nGitHub Pages\nAtualize ou torne este repositório público para habilitar as Páginas.\nSaiba mais sobre o GitHub Pages\nVisibilidade\nGitHub Enterprise\nCom uma conta GitHub Enterprise, você pode restringir o acesso ao seu site GitHub Pages publicando-o como privado. Você pode usar sites publicados de forma privada para compartilhar sua documentação interna ou base de conhecimento com membros da sua empresa. Experimente o GitHub Enterprise gratuitamente por 30 dias. Saiba mais sobre a visibilidade do seu site GitHub Pages.",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Essa mensagem significa que o GitHub Pages não está disponível para este repositório enquanto ele estiver privado. Para publicar pelo GitHub Pages, o repositório precisa ser público ou a conta precisa ter um plano GitHub Enterprise que permita páginas privadas.\n\nComo você quer compartilhar a atividade com os alunos, peça à pessoa que administra o repositório para torná-lo público ou publicar o site em outra plataforma. Depois que a publicação estiver ativa, o GitHub mostrará o endereço em **Configurações → Páginas**."
     }
   ]
 }
