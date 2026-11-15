@@ -65,14 +65,12 @@ function Index() {
   const [aba, setAba] = useState<"editar" | "formatado">("editar");
   const [data, setData] = useState(DATA_INICIAL);
   const [textos, setTextos] = useState<string[]>(AULAS.map((a) => a.texto));
-  const [respostas, setRespostas] = useState<string[]>(AULAS.map(() => ""));
   const [whatsapp, setWhatsapp] = useState(WHATSAPP_INSTRUTORA);
   const [fotos, setFotos] = useState<string[]>(AULAS.map(() => ""));
 
   useEffect(() => {
     setData(load("sobef-data", DATA_INICIAL));
     setTextos(load("sobef-textos", AULAS.map((a) => a.texto)));
-    setRespostas(load("sobef-respostas", AULAS.map(() => "")));
     setWhatsapp(load("sobef-whatsapp", WHATSAPP_INSTRUTORA));
   }, []);
 
@@ -83,10 +81,6 @@ function Index() {
   useEffect(() => {
     localStorage.setItem("sobef-textos", JSON.stringify(textos));
   }, [textos]);
-
-  useEffect(() => {
-    localStorage.setItem("sobef-respostas", JSON.stringify(respostas));
-  }, [respostas]);
 
   useEffect(() => {
     localStorage.setItem("sobef-whatsapp", JSON.stringify(whatsapp));
@@ -238,21 +232,6 @@ function Index() {
                         Texto pronto de exemplo — o aluno fará um parecido
                       </p>
                       <p className="mt-2 whitespace-pre-line text-sm leading-relaxed">{aula.modelo}</p>
-                    </div>
-                    <div className="mt-3 print:hidden">
-                      <label htmlFor={`resposta-${i}`} className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                        Texto do educando (escreva o seu aqui)
-                      </label>
-                      <textarea
-                        id={`resposta-${i}`}
-                        value={respostas[i]}
-                        onChange={(e) =>
-                          setRespostas((prev) => prev.map((r, j) => (j === i ? e.target.value : r)))
-                        }
-                        rows={5}
-                        placeholder="Escreva aqui o seu texto sobre esta aula..."
-                        className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus:ring-2 focus:ring-ring"
-                      />
                     </div>
                     <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4 print:hidden">
                       <h4 className="text-sm font-semibold">Enviar trabalho para correção</h4>
