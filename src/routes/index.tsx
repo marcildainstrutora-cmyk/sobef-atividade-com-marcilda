@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
 const INFO = ["Curso Presencial", "40 Horas", "20 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
 
 const DATA_INICIAL = "Segunda-feira, 16 de novembro de 2026";
-const WHATSAPP_INSTRUTORA = "85991841433";
+const WHATSAPP_INSTRUTORA = "85997841433";
 
 const AULAS = [
   {
@@ -117,7 +117,7 @@ function Index() {
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
               Informática Avançada — Atividades
             </h1>
-            <p className="mt-1 text-sm text-muted-foreground">Cursos de Qualificação — ESBC x SOBEF • Instrutora: Marcilda Pereira</p>
+            <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">Cursos de Qualificação — ESBC x SOBEF • Instrutora: Marcilda Pereira</p>
           </div>
         </div>
       </header>
