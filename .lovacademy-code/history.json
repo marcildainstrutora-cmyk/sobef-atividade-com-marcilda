@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T03:00:11.424Z",
+  "updated_at": "2026-11-15T03:01:37.428Z",
   "messages": [
     {
       "role": "user",
@@ -394,6 +394,15 @@
     {
       "role": "assistant",
       "text": "Claro! No GitHub, abra o repositório e siga estes passos:\n\n1. Toque em **Configurações**.\n2. Procure **Páginas** no menu.\n3. Se o site estiver publicado, o endereço aparecerá nessa tela. Toque nele para abrir.\n4. Copie o endereço que aparece no navegador e envie aos alunos pelo WhatsApp.\n\nSe não encontrar **Páginas** ou não aparecer nenhum endereço, me diga o que está vendo na tela."
+    },
+    {
+      "role": "user",
+      "text": "n tem nenhum enderenço",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Se nenhum endereço aparece em **Configurações → Páginas**, o site provavelmente ainda não foi publicado. Nessa tela, procure **Criar implantação** ou **Fonte de compilação** e veja se é possível escolher a branch `main` e a pasta `/ (root)`. Depois toque em **Salvar**. O GitHub pode levar alguns minutos para publicar; então o endereço aparecerá em **Páginas**.\n\nSe essas opções também não aparecerem, me diga o que você vê nessa tela para eu orientar o próximo passo."
     }
   ]
 }
