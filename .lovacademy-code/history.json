@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-15T01:04:31.580Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "tire essa parte ESBC x, coloque 20 Vagas, 85 997841433 what instrutora",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Se você quis dizer “WhatsApp da instrutora”, o texto pode ficar assim:\n\n**20 vagas • WhatsApp da instrutora: (85) 99784-1433**"
+    }
+  ]
+}
