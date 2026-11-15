@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T01:09:19.544Z",
+  "updated_at": "2026-11-15T01:12:06.757Z",
   "messages": [
     {
       "role": "user",
@@ -37,6 +37,15 @@
     {
       "role": "assistant",
       "text": "Entendi: o “20 vagas” ainda não está aparecendo na página. Até agora, só definimos o texto; nenhuma alteração foi aplicada. Para eu preparar a edição, peça explicitamente a alteração da página."
+    },
+    {
+      "role": "user",
+      "text": "Confirme a associação com o projeto Lovable clicando em Vincular. onde fica",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "O botão **Vincular** fica na tela de confirmação da associação ao projeto Lovable, ao lado ou abaixo dos dados do projeto selecionado. Não aparece na página do curso.\n\nEu não consigo ver essa tela daqui. Se ela não estiver aberta, volte à etapa em que escolheu o projeto Lovable; a opção deve aparecer antes de confirmar o vínculo."
     }
   ]
 }
