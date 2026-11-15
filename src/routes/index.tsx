@@ -23,7 +23,7 @@ const WHATSAPP_INSTRUTORA = "85997841433";
 
 const AULAS = [
   {
-    titulo: "1. Writer — Marcadores, numeração e listas com vários níveis",
+    titulo: "1. Marcadores, numeração e listas com vários níveis",
     texto:
       "Nesta aula, os alunos aprendem a organizar informações no LibreOffice Writer usando marcadores e numeração automática. O foco é criar listas com vários níveis (tópicos e subtópicos), ajustar o recuo de cada nível, trocar o estilo dos marcadores e reiniciar ou continuar a numeração. Ao final, cada aluno monta um documento com uma lista hierárquica bem estruturada, como um sumário ou um plano de aula.",
     exercicio:
@@ -43,7 +43,7 @@ const AULAS = [
     conferencia: [],
   },
   {
-    titulo: "2. Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
+    titulo: "2. Tabelas: inserir, mesclar células, bordas e cor de fundo",
     texto:
       "Nesta aula, os alunos aprendem a trabalhar com tabelas no LibreOffice Writer: inserir uma tabela, adicionar e remover linhas e colunas, mesclar e dividir células, personalizar bordas (espessura, estilo e cor) e aplicar cor de fundo para destacar cabeçalhos. Como atividade prática, cada aluno cria uma tabela formatada, como um quadro de horários ou uma lista de presença.",
     exercicio:
@@ -70,7 +70,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "3. Writer — Mala direta: cartas personalizadas",
+    titulo: "3. Mala direta: cartas personalizadas",
     texto:
       "Nesta aula, os alunos organizam informações de destinatários em uma fonte de dados e usam a mala direta para criar cartas personalizadas. A atividade trabalha a conexão entre os dados e o documento, a inserção de campos e a conferência do resultado antes de concluir a mesclagem.",
     exercicio:
@@ -97,7 +97,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "4. Writer — Estilos, sumário automático e referências",
+    titulo: "4. Estilos, sumário automático e referências",
     texto:
       "Nesta aula, os alunos aplicam estilos de título e corpo de texto para organizar um documento longo. Depois, inserem um sumário automático, atualizam sua estrutura após alterações e acrescentam uma nota de referência ao final do documento.",
     exercicio:
@@ -124,7 +124,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "5. Writer — Interface, formatação e estilos de texto",
+    titulo: "5. Interface, formatação e estilos de texto",
     texto:
       "Conheça a interface do Writer e pratique a criação de documentos. A atividade trabalha fontes, tamanhos, alinhamento, espaçamento entre parágrafos e estilos de título e corpo de texto, preparando o documento para ficar organizado e fácil de ler.",
     exercicio:
@@ -151,7 +151,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "6. Writer — Imagens, layout, cabeçalho e revisão",
+    titulo: "6. Imagens, layout, cabeçalho e revisão",
     texto:
       "Insira imagens e formas, ajuste a posição do texto ao redor delas e organize as páginas com cabeçalho, rodapé, numeração e colunas. Finalize revisando ortografia e comentários e exportando o documento para PDF.",
     exercicio:
@@ -178,7 +178,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "7. Calc — Células, formatação, fórmulas e funções",
+    titulo: "7. Células, formatação, fórmulas e funções",
     texto:
       "Conheça a interface do Calc e organize informações em células, linhas e colunas. Pratique formatos de dados, referências relativas e absolutas, operações básicas, funções de soma, média, máximo e mínimo, além de funções SE, texto e data.",
     exercicio:
@@ -206,7 +206,7 @@ const AULAS = [
     ],
   },
   {
-    titulo: "8. Calc — Busca, filtros, gráficos e projeto final",
+    titulo: "8. Busca, filtros, gráficos e projeto final",
     texto:
       "Aplique funções de procura para localizar dados e use classificação, filtros, formatação condicional, tabelas dinâmicas e gráficos para analisar uma planilha. Termine com validação de dados, proteção de células e um projeto de revisão geral.",
     exercicio:
