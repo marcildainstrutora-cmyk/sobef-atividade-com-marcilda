@@ -16,10 +16,10 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const INFO = ["Curso Presencial", "40 Horas", "15 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
+const INFO = ["Curso Presencial", "40 Horas", "20 Vagas", "Tarde (13h às 17h)", "2ª a 6ª feira"];
 
 const DATA_INICIAL = "Segunda-feira, 16 de novembro de 2026";
-const WHATSAPP_INSTRUTORA = "85997841433";
+const WHATSAPP_INSTRUTORA = "85991841433";
 
 const AULAS = [
   {
