@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T02:50:52.571Z",
+  "updated_at": "2026-11-15T02:53:09.502Z",
   "messages": [
     {
       "role": "user",
@@ -367,6 +367,15 @@
     {
       "role": "assistant",
       "text": "Você quer ajuda com o GitHub para encontrar e compartilhar o link da atividade com seus alunos? Se sim, acesse o repositório `marcildainstrutora-cmyk/sobef-atividade-com-marcilda` e me diga o que aparece na página principal."
+    },
+    {
+      "role": "user",
+      "text": "acesso o arquvio ou codigo",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "Acesse o **site publicado**, não o arquivo ou código. No GitHub, abra o repositório `marcildainstrutora-cmyk/sobef-atividade-com-marcilda` e procure o link do site — geralmente aparece em **Deployments** ou em **Settings → Pages**. Abra esse link, copie o endereço do navegador e envie aos alunos pelo WhatsApp."
     }
   ]
 }
