@@ -27,36 +27,92 @@ const AULAS = [
     texto:
       "Nesta aula, os alunos aprendem a organizar informações no LibreOffice Writer usando marcadores e numeração automática. O foco é criar listas com vários níveis (tópicos e subtópicos), ajustar o recuo de cada nível, trocar o estilo dos marcadores e reiniciar ou continuar a numeração. Ao final, cada aluno monta um documento com uma lista hierárquica bem estruturada, como um sumário ou um plano de aula.",
     exercicio:
-      "Crie um documento no Writer com o título \"Plano de Estudos\". Monte uma lista com pelo menos 3 tópicos principais numerados e, dentro de cada tópico, 2 subtópicos com marcadores. Ajuste o recuo de cada nível e troque o estilo dos marcadores para um símbolo de sua preferência.",
+      "Digite o texto modelo abaixo no Writer e siga as etapas para aplicar numeração, marcadores e recuos. Ao terminar, confira o resultado na aba Texto formatado.",
+    passos: [
+      "Abra um documento em branco no Writer e digite o título Plano de Estudos. Selecione o título, aplique negrito, centralize e aumente o tamanho da fonte.",
+      "Nas linhas seguintes, digite os três tópicos principais do texto modelo, um por linha. Selecione essas linhas e aplique uma lista numerada automática.",
+      "Abaixo de cada tópico, digite os dois subtópicos. Selecione cada par de subtópicos e aplique marcadores.",
+      "Use Tab ou Aumentar recuo para colocar os subtópicos em um nível abaixo. Use Shift+Tab ou Diminuir recuo para voltar ao nível principal.",
+      "Troque o símbolo dos marcadores pelo estilo de sua preferência. Confira que os tópicos principais continuam numerados e os subtópicos estão recuados.",
+    ],
     modelo:
-      "Exemplo pronto — Plano de Estudos:\n1. Informática Básica\n   • Ligar e desligar o computador corretamente\n   • Usar o mouse e o teclado\n2. LibreOffice Writer\n   • Criar e salvar um documento\n   • Formatar textos com negrito e itálico\n3. Internet\n   • Pesquisar no Google\n   • Enviar e receber e-mails\n\nObserve como cada tópico principal tem numeração automática e os subtópicos usam marcadores com recuo. O seu trabalho deve ficar parecido com este, mas com o seu próprio conteúdo.",
+      "PLANO DE ESTUDOS\n\nInformática Básica\nLigar e desligar o computador corretamente\nUsar o mouse e o teclado\n\nLibreOffice Writer\nCriar e salvar um documento\nFormatar textos com negrito e itálico\n\nInternet\nPesquisar informações com segurança\nEnviar e receber e-mails",
+    conferencia: [
+      "O título Plano de Estudos está destacado e centralizado.",
+      "Os três tópicos principais têm numeração automática.",
+      "Cada tópico contém dois subtópicos com marcadores.",
+      "Os subtópicos aparecem recuados abaixo de seus tópicos principais.",
+      "O documento está organizado e sem linhas fora da lista por engano.",
+    ],
   },
   {
     titulo: "2. Writer — Tabelas: inserir, mesclar células, bordas e cor de fundo",
     texto:
       "Nesta aula, os alunos aprendem a trabalhar com tabelas no LibreOffice Writer: inserir uma tabela, adicionar e remover linhas e colunas, mesclar e dividir células, personalizar bordas (espessura, estilo e cor) e aplicar cor de fundo para destacar cabeçalhos. Como atividade prática, cada aluno cria uma tabela formatada, como um quadro de horários ou uma lista de presença.",
     exercicio:
-      "No Writer, crie um quadro de horários da semana com 6 colunas (Horário e os dias de 2ª a 6ª feira) e 4 linhas de horários. Na primeira linha, mescle as células para criar o título \"Quadro de Horários — Semana 1\". Na segunda linha, escreva os cabeçalhos: Horário | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira. Preencha as linhas de horários com suas atividades. Aplique fundo azul no título, fundo cinza no cabeçalho e letras brancas no título. Personalize as bordas da tabela, deixando a borda externa preta e mais grossa. Use o exemplo abaixo como modelo e faça um quadro parecido com seus próprios horários e matérias.",
+      "Digite os dados do quadro de horários no Writer e transforme-os em uma tabela. Depois, aplique mesclagem, cores e bordas seguindo as etapas abaixo.",
+    passos: [
+      "Abra o Writer e digite o título Quadro de Horários — Semana 1. Na linha seguinte, digite os cabeçalhos e os dados do modelo, separados por barras verticais (|).",
+      "Selecione os dados, escolha Tabela > Converter > Texto em tabela e use o caractere | como separador. Se preferir, insira uma tabela de 6 colunas por 6 linhas e preencha as células.",
+      "Insira uma linha acima dos cabeçalhos. Selecione suas seis células e use Mesclar células para criar uma única célula de título; digite nela Quadro de Horários — Semana 1.",
+      "Aplique fundo azul e letras brancas à célula do título. Aplique fundo cinza à linha de cabeçalho e deixe os nomes dos dias em negrito.",
+      "Personalize as bordas: deixe a borda externa preta e mais grossa e mantenha linhas internas visíveis. Confira se todos os horários e dias estão nas células corretas.",
+    ],
     modelo:
-      "Exemplo para você observar e fazer parecido no Writer:\n\nQuadro de Horários — Semana 1\nHorário | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira\n13h às 14h | Writer | Writer | Writer | Writer | Writer\n14h às 15h | Writer | Writer | Writer | Writer | Writer\n15h às 16h | Calc | Calc | Calc | Calc | Calc\n16h às 17h | Exercícios | Exercícios | Exercícios | Exercícios | Exercícios\n\nNo Writer, transforme este modelo em uma tabela: mescle as células da primeira linha para o título ocupar todas as colunas, aplique fundo azul e letras brancas ao título, e fundo cinza ao cabeçalho. Faça a borda externa preta e mais grossa. Depois, crie sua própria versão, escolhendo horários e matérias para preencher os dias da semana.",
+      "HORÁRIO | 2ª feira | 3ª feira | 4ª feira | 5ª feira | 6ª feira\n13h às 14h | Writer | Writer | Writer | Writer | Writer\n14h às 15h | Writer | Writer | Writer | Writer | Writer\n15h às 16h | Calc | Calc | Calc | Calc | Calc\n16h às 17h | Exercícios | Exercícios | Exercícios | Exercícios | Exercícios",
+    conferencia: [
+      "A tabela tem seis colunas: horário e os cinco dias da semana.",
+      "O título ocupa uma célula mesclada na primeira linha.",
+      "Os cabeçalhos e os quatro horários estão preenchidos corretamente.",
+      "O título tem fundo azul e letras brancas; o cabeçalho tem fundo cinza.",
+      "A borda externa preta e mais grossa e as linhas internas estão visíveis.",
+    ],
   },
   {
     titulo: "3. Writer — Mala direta: cartas personalizadas",
     texto:
       "Nesta aula, os alunos organizam informações de destinatários em uma fonte de dados e usam a mala direta para criar cartas personalizadas. A atividade trabalha a conexão entre os dados e o documento, a inserção de campos e a conferência do resultado antes de concluir a mesclagem.",
     exercicio:
-      "Crie uma fonte de dados com quatro registros fictícios, contendo nome, bairro e curso. No Writer, prepare uma carta de boas-vindas com título, saudação, parágrafo de apresentação e assinatura. Insira os campos de nome, bairro e curso nos lugares indicados. Faça a mesclagem para gerar uma carta para cada registro e confira se os dados aparecem corretamente.",
+      "Digite a carta modelo no Writer, crie uma pequena fonte de dados fictícia e personalize uma carta para cada registro. Use somente dados inventados para esta atividade.",
+    passos: [
+      "Abra uma planilha do Calc e crie as colunas Nome, Bairro e Curso. Preencha quatro linhas com dados fictícios, sem usar informações pessoais reais, e salve o arquivo.",
+      "No Writer, digite o texto da carta abaixo. Formate o título em negrito e centralizado, mantenha os parágrafos alinhados à esquerda e deixe uma linha em branco entre eles.",
+      "Inicie o Assistente de Mala Direta ou conecte a fonte de dados salva. Selecione a planilha e a folha que contém os quatro registros.",
+      "Substitua «Nome», «Bairro» e «Curso» pelos campos correspondentes da fonte de dados nos locais indicados na carta.",
+      "Visualize cada registro antes de concluir. Confira se saudação, bairro e curso correspondem à mesma pessoa e gere as cartas personalizadas.",
+    ],
     modelo:
-      "Modelo de carta personalizada:\n\nBOAS-VINDAS AO CURSO\n\nFortaleza, 16 de novembro de 2026\n\nOlá, «Nome»!\n\nSeja bem-vindo(a) ao curso de «Curso». Ficamos felizes em receber você, morador(a) do bairro «Bairro», nesta nova etapa de aprendizagem.\n\nAs aulas acontecerão de segunda a sexta-feira, no período da tarde. Traga seu caderno e venha preparado(a) para aprender.\n\nAtenciosamente,\nEquipe do curso\n\nSubstitua os campos entre « » pelos campos da fonte de dados. Ao mesclar, cada carta deverá apresentar as informações do respectivo registro.",
+      "BOAS-VINDAS AO CURSO\n\nFortaleza, 16 de novembro de 2026\n\nOlá, «Nome»!\n\nSeja bem-vindo(a) ao curso de «Curso». Ficamos felizes em receber você, morador(a) do bairro «Bairro», nesta nova etapa de aprendizagem.\n\nNas aulas, vamos aprender a criar e formatar documentos, organizar informações e usar ferramentas digitais com responsabilidade. Participe das atividades, faça perguntas e pratique cada etapa no computador.\n\nAs aulas acontecerão de segunda a sexta-feira, no período da tarde. Traga seu caderno e venha preparado(a) para aprender.\n\nAtenciosamente,\nEquipe do curso",
+    conferencia: [
+      "A fonte de dados tem os campos Nome, Bairro e Curso e quatro registros fictícios.",
+      "A carta tem título, data, saudação, apresentação, informação das aulas e assinatura.",
+      "Os campos de mala direta estão nos lugares certos, sem marcadores digitados por engano.",
+      "A visualização mostra os dados do mesmo registro em todos os campos da carta.",
+      "Foram geradas quatro cartas e cada uma apresenta um destinatário fictício diferente.",
+    ],
   },
   {
     titulo: "4. Writer — Estilos, sumário automático e referências",
     texto:
       "Nesta aula, os alunos aplicam estilos de título e corpo de texto para organizar um documento longo. Depois, inserem um sumário automático, atualizam sua estrutura após alterações e acrescentam uma nota de referência ao final do documento.",
     exercicio:
-      "Produza um pequeno guia com o título \"Uso responsável da internet\". Inclua uma introdução e três seções: proteção de dados, comunicação respeitosa e verificação de informações. Aplique estilos de título aos cabeçalhos e estilo de corpo aos parágrafos. Insira um sumário automático após o título, numere as páginas e acrescente ao final uma seção de fontes consultadas. Atualize o sumário depois de concluir o texto.",
+      "Digite o guia abaixo no Writer. Use estilos de título para as seções, gere um sumário automático, numere as páginas e registre a referência indicada ao final.",
+    passos: [
+      "Digite o título Uso responsável da internet. Depois, digite os cabeçalhos Introdução, Proteção de dados, Comunicação respeitosa, Verificação de informações e Fontes consultadas, com seus parágrafos.",
+      "Aplique o estilo Título 1 ao título principal e Título 2 a cada seção. Mantenha os parágrafos explicativos no estilo Corpo de texto. Não formate os cabeçalhos apenas com negrito: use os estilos para que o Writer os reconheça.",
+      "Coloque o cursor depois do título principal e antes da primeira seção. Use Inserir > Sumário e Índice > Sumário, Índice ou Bibliografia para inserir um sumário automático.",
+      "Insira números de página no rodapé usando Inserir > Número da página. Confira se a numeração aparece nas páginas do documento.",
+      "Se alterar um cabeçalho ou acrescentar conteúdo, clique com o botão direito no sumário e escolha Atualizar índice. Confira a ordem das seções e mantenha a fonte consultada ao final.",
+    ],
     modelo:
-      "Modelo de organização do documento:\n\nUSO RESPONSÁVEL DA INTERNET\n\nSUMÁRIO\n1. Introdução\n2. Proteção de dados\n3. Comunicação respeitosa\n4. Verificação de informações\n5. Fontes consultadas\n\n1. INTRODUÇÃO\nA internet facilita o acesso à informação e a comunicação. Para aproveitá-la com segurança, é importante adotar atitudes responsáveis.\n\n2. PROTEÇÃO DE DADOS\nUse senhas seguras e não compartilhe informações pessoais com desconhecidos.\n\n3. COMUNICAÇÃO RESPEITOSA\nEscreva com educação, respeite opiniões diferentes e pense antes de publicar.\n\n4. VERIFICAÇÃO DE INFORMAÇÕES\nConfira a autoria, a data e a fonte antes de compartilhar uma notícia.\n\n5. FONTES CONSULTADAS\nNome da instituição ou do site. Título da página consultada. Data de acesso.\n\nNo Writer, aplique estilos aos títulos das seções e gere o sumário automático a partir deles. A aparência do sumário pode ser diferente deste exemplo, mas deve listar as seções na ordem do documento.",
+      "USO RESPONSÁVEL DA INTERNET\n\nINTRODUÇÃO\nA internet facilita o acesso à informação, aos estudos e à comunicação. Para aproveitar esses recursos, precisamos agir com atenção, respeito e responsabilidade.\n\nPROTEÇÃO DE DADOS\nUse senhas difíceis de adivinhar e não compartilhe endereço, telefone, senhas ou outras informações pessoais com desconhecidos. Antes de preencher um cadastro, confira se o site é confiável e peça ajuda a um adulto quando tiver dúvida.\n\nCOMUNICAÇÃO RESPEITOSA\nEscreva com educação, respeite opiniões diferentes e pense antes de publicar uma mensagem. Não compartilhe conteúdo que humilhe ou exponha outra pessoa. Se receber algo que cause desconforto, converse com um adulto de confiança.\n\nVERIFICAÇÃO DE INFORMAÇÕES\nAntes de acreditar ou compartilhar uma notícia, confira quem publicou, quando foi publicada e quais fontes são apresentadas. Compare a informação com outros canais confiáveis e não repasse mensagens que você não conseguiu verificar.\n\nFONTES CONSULTADAS\nOrganização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO). Alfabetização midiática e informacional. Consulte materiais educativos sobre segurança e cidadania digital.",
+    conferencia: [
+      "O título e os cabeçalhos das seções usam estilos do Writer; os parágrafos usam Corpo de texto.",
+      "O sumário foi gerado automaticamente e lista as seções na ordem do documento.",
+      "A numeração aparece no rodapé das páginas.",
+      "Após qualquer mudança nos títulos, o sumário foi atualizado.",
+      "A seção Fontes consultadas está no final e contém a referência indicada.",
+    ],
   },
 ];
 
@@ -213,19 +269,30 @@ function Index() {
           <section className="mt-6">
             <h2 className="text-lg font-bold sm:text-xl">Aulas — edição</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Edite o texto de cada aula abaixo. As alterações ficam salvas neste navegador.
+              Digite o texto modelo no Writer instalado no computador. Use os passos de cada atividade para formatá-lo. As alterações neste campo servem para anotações e ficam salvas neste navegador.
             </p>
             <div className="mt-4 grid gap-4">
               {AULAS.map((aula, i) => (
                 <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
                   <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
+                  <div className="mt-3 rounded-md border border-border bg-secondary/50 p-4">
+                    <h4 className="text-sm font-semibold">Passo a passo no Writer</h4>
+                    <ol className="mt-2 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+                      {aula.passos.map((passo) => <li key={passo}>{passo}</li>)}
+                    </ol>
+                  </div>
+                  <label htmlFor={`texto-aula-${i}`} className="mt-4 block text-sm font-semibold">Texto modelo para digitar no Writer</label>
+                  <pre className="mt-2 whitespace-pre-wrap rounded-md border border-border bg-background p-3 font-sans text-sm leading-relaxed">{aula.modelo}</pre>
+                  <label htmlFor={`anotacoes-aula-${i}`} className="mt-4 block text-sm font-semibold">Minhas anotações</label>
                   <textarea
+                    id={`anotacoes-aula-${i}`}
                     value={textos[i]}
                     onChange={(e) =>
                       setTextos((prev) => prev.map((t, j) => (j === i ? e.target.value : t)))
                     }
-                    rows={6}
-                    className="mt-3 w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus:ring-2 focus:ring-ring"
+                    rows={4}
+                    className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus:ring-2 focus:ring-ring"
                   />
                 </article>
               ))}
@@ -233,29 +300,34 @@ function Index() {
           </section>
         ) : (
           <section className="mt-6">
-            <h2 className="text-lg font-bold sm:text-xl">Aulas — texto formatado</h2>
+            <h2 className="text-lg font-bold sm:text-xl">Conferência do trabalho</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Início: <strong>{data}</strong>
+              Confira seu documento do Writer com a lista de cada atividade. Quando todos os itens estiverem corretos, envie uma foto ou captura de tela à instrutora pelo WhatsApp <strong className="text-foreground">85 99784-1433</strong>.
             </p>
+            <p className="mt-2 text-sm text-muted-foreground">Início: <strong>{data}</strong></p>
             <div className="mt-4 grid gap-4">
               {AULAS.map((aula, i) => (
                 <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
                   <h3 className="font-semibold leading-snug">{aula.titulo}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{textos[i]}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
                   <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4">
-                    <h4 className="text-sm font-semibold">Exercício prático</h4>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{aula.exercicio}</p>
-                    <div className="mt-3 rounded-md border border-border bg-card p-3">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                        Texto pronto de exemplo — o aluno fará um parecido
-                      </p>
-                      <p className="mt-2 whitespace-pre-line text-sm leading-relaxed">{aula.modelo}</p>
+                    <h4 className="text-sm font-semibold">Checklist para conferir</h4>
+                    <ul className="mt-2 space-y-2 text-sm leading-relaxed">
+                      {aula.conferencia.map((item) => (
+                        <li key={item} className="flex items-start gap-2">
+                          <span aria-hidden="true" className="mt-0.5 inline-flex h-4 w-4 shrink-0 rounded border border-input bg-background" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-4 rounded-md border border-border bg-card p-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Texto de referência</p>
+                      <pre className="mt-2 whitespace-pre-wrap font-sans text-sm leading-relaxed">{aula.modelo}</pre>
                     </div>
                     <div className="mt-4 rounded-md border border-border bg-secondary/50 p-4 print:hidden">
                       <h4 className="text-sm font-semibold">Enviar trabalho para correção</h4>
                       <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                        Faça o exercício no Writer, tire uma foto ou print da tela e envie para a
-                        instrutora Marcilda corrigir.
+                        Tire uma foto ou captura de tela do documento feito no Writer e anexe na conversa do WhatsApp antes de enviar.
                       </p>
                       <div className="mt-3 flex flex-wrap items-center gap-2">
                         <label className="cursor-pointer rounded-md border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-accent">
