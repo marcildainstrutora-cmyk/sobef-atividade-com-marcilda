@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-15T02:53:09.502Z",
+  "updated_at": "2026-11-15T02:59:23.083Z",
   "messages": [
     {
       "role": "user",
@@ -376,6 +376,15 @@
     {
       "role": "assistant",
       "text": "Acesse o **site publicado**, não o arquivo ou código. No GitHub, abra o repositório `marcildainstrutora-cmyk/sobef-atividade-com-marcilda` e procure o link do site — geralmente aparece em **Deployments** ou em **Settings → Pages**. Abra esse link, copie o endereço do navegador e envie aos alunos pelo WhatsApp."
+    },
+    {
+      "role": "user",
+      "text": "não achei o link",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "text": "No GitHub, abra o repositório e toque em **Settings** → **Pages**. Em **Build and deployment**, confira se a publicação está ativa; o endereço do site deve aparecer nessa página, geralmente no topo, em **Visit site**.\n\nSe não aparecer, a atividade talvez ainda não esteja publicada. Diga o que aparece em **Settings → Pages** e eu te ajudo a localizar o próximo passo."
     }
   ]
 }
