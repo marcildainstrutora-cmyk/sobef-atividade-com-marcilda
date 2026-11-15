@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 const INFO = ["Curso Presencial", "100 Horas", "Vagas: 20", "Horário: 13h às 17h", "2ª a 6ª feira", "Acesso em notebook, tablet e celular"];
 
-const DATA_INICIAL = "03/11 a 08/12/2026, de 2ª a 6ª";
+const DATA_INICIAL = "Período a definir";
 const WHATSAPP_INSTRUTORA = "85997841433";
 
 const AULAS = [
@@ -314,7 +314,7 @@ function Index() {
               Informática Avançada — Atividades SOBEF
             </h1>
             <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">SOBEF — Qualificação Profissional • Instrutora: Marcilda Pereira</p>
-            <p className="mt-1 text-sm font-medium text-muted-foreground">Carga horária: 100 h (25 aulas de 4 h) • Período: 03/11 a 08/12/2026, de 2ª a 6ª</p>
+            <p className="mt-1 text-sm font-medium text-muted-foreground">Carga horária: 100 h (25 aulas de 4 h) • Período a definir</p>
             <p className="mt-1 text-sm font-medium text-muted-foreground">Horário: 13h às 17h • Vagas: 20 • Executora: SOBEF</p>
           </div>
         </div>
@@ -342,7 +342,7 @@ function Index() {
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border bg-card p-4">
             <label htmlFor="data-segunda" className="text-sm font-semibold">
-              Data de segunda-feira (editável)
+              Período (editável)
             </label>
             <input
               id="data-segunda"
@@ -418,7 +418,7 @@ function Index() {
             <p className="mt-1 text-sm text-muted-foreground">
               Confira seu documento do Writer com a lista de cada atividade. Quando todos os itens estiverem corretos, envie uma foto ou captura de tela à instrutora pelo WhatsApp <strong className="text-foreground">85 99784-1433</strong>.
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">Início: <strong>{data}</strong></p>
+            <p className="mt-2 text-sm text-muted-foreground">Período: <strong>{data}</strong></p>
             <div className="mt-4 grid gap-4">
               {AULAS.map((aula, i) => (
                 <article key={aula.titulo} className="rounded-lg border border-border bg-card p-5 shadow-sm">
