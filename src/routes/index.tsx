@@ -311,7 +311,7 @@ function Index() {
               Curso Presencial • 2026
             </span>
             <h1 className="mt-2 text-xl font-bold leading-tight sm:text-3xl">
-              Informática Avançada — Atividades SOBEF
+              Informática Avançada — Atividade 10
             </h1>
             <p className="mt-1 text-xl font-bold text-foreground sm:text-2xl">Instrutora: Marcilda Pereira</p>
             <p className="mt-1 text-sm font-medium text-muted-foreground">Carga horária: 100 h (25 aulas de 4 h) • Período a definir</p>
